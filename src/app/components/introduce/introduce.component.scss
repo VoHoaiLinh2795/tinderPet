@@ -200,6 +200,9 @@
 }
 
 .TitleAndContent {
+  position: relative;
+  height: 285px;
+ 
     padding: 10px;
     text-align: center;
 }
@@ -213,13 +216,14 @@
 }
 
 .TitleAndContent div {
+ 
     font-size: 14px;
     color: #343434;
     line-height: 1.5;
 }
 
-.TitleAndContent button {
-  margin-top: 210px;
+.unitCard button {
+  
   outline: none;
   border: none;
   border-radius: 10px;
