@@ -146,6 +146,24 @@ $gray: #9b9b9b;
 
    }
 
+   .cancel-button {
+    margin-top: 10px;
+   background-color: #991111;
+    
+     align-items: center;
+    width: 100px;
+    color: white;
+    height: 50px;
+    
+   
+    border-radius: 60px;
+   }
+
+   .cancel-button:hover {
+    scale: 1.01;
+    background-color:#ea1a1a ;
+   }
+
    .mini-login-bar:hover {
      transform: scale(1.01);
      

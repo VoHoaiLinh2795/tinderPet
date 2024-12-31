@@ -14,7 +14,7 @@
     <img id="imgGG" src="https://firebasestorage.googleapis.com/v0/b/blogpj-t1.appspot.com/o/image%2Fgoogle.png?alt=media&token=40cdfd1b-9966-4706-a047-7e9ccf7fb1a8">
     <div class="inner-text">Đăng nhập bằng google</div>
   </div>
-  <button (click)="cancelLogin()">Thoát</button>
+  <button class="cancel-button"(click)="cancelLogin()">Thoát</button>
 </div>
 
 <div *ngIf="chooseEmail" class="inner-login" [ngStyle]="{'background-color': 'black'}">
@@ -33,9 +33,11 @@
 </form>
 
 <div class="button-container">
-  <a id="button-submit" href="/card" class="btn btn-primary">Submit</a>
+  <button id="button-cancel" (click)="cancel()">Hủy</button>
+  <button id="button-submit" class="btn btn-primary" onclick="window.location.href='/register'">Đăng nhập</button>
 
-<button id="button-cancel" (click)="cancel()">Cancel</button>
+
+
 </div>
 
 </div>

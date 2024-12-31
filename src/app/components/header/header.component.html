@@ -1,36 +1,36 @@
 <header class="header">
-    <div class="header-container">
-      <!-- Logo -->
-      <div class="logo">
-        <a routerLink="/introduce">
-          <img src="https://firebasestorage.googleapis.com/v0/b/blogpj-t1.appspot.com/o/image%2Fapp_name-removebg-preview.png?alt=media&token=a5b93a45-0261-4f41-95de-41cbf54fa938" alt="Logo" />
-        </a>
-      </div>
-  
-      <!-- Menu Icon -->
-      <div class="menu-icon" (click)="toggleMenu()">
+  <div class="header-container">
+    <!-- Logo -->
+    <div class="logo">
+      <a routerLink="/introduce">
         <img
-          *ngIf="!isMenuOpen"
-          src="https://firebasestorage.googleapis.com/v0/b/blogpj-t1.appspot.com/o/image%2Fmenu(1).png?alt=media&token=17063ecc-5cd3-4620-a4f2-9824b0c1a597"
-          alt="Menu Icon"
-          class="menu-image"
+          src="https://firebasestorage.googleapis.com/v0/b/blogpj-t1.appspot.com/o/image%2Fapp_name-removebg-preview.png?alt=media&token=a5b93a45-0261-4f41-95de-41cbf54fa938"
+          alt="Logo"
         />
-        <img
-          *ngIf="isMenuOpen"
-          src="https://firebasestorage.googleapis.com/v0/b/blogpj-t1.appspot.com/o/image%2Fclose.png?alt=media&token=dummy-close-image"
-          alt="Close Icon"
-          class="menu-image"
-        />
-      </div>
-  
-      <!-- Dropdown Menu -->
-      <nav class="dropdown-menu" [class.active]="isMenuOpen">
-        <a routerLink="/introduce" class="menu-link">Trang chủ</a>
-        <a routerLink="/card" class="menu-link">Tìm thú cưng</a>
-        <a routerLink="/register" class="menu-link">Đăng ký thông tin</a>
-        <a routerLink="/services" class="menu-link">Services</a>
-        <a routerLink="/contact" class="menu-link">Contact</a>
-      </nav>
+      </a>
     </div>
-  </header>
-  
+
+    <!-- Menu Icon -->
+    <div class="menu-icon" (click)="toggleMenu()">
+      <img
+        *ngIf="!isMenuOpen"
+        src="https://firebasestorage.googleapis.com/v0/b/blogpj-t1.appspot.com/o/image%2Fmenu(1).png?alt=media&token=17063ecc-5cd3-4620-a4f2-9824b0c1a597"
+        alt="Menu Icon"
+        class="menu-image"
+      />
+      <img
+        *ngIf="isMenuOpen"
+        src="https://firebasestorage.googleapis.com/v0/b/blogpj-t1.appspot.com/o/image%2Fclose.png?alt=media&token=dummy-close-image"
+        alt="Close Icon"
+        class="menu-image"
+      />
+    </div>
+
+    <!-- Dropdown Menu -->
+    <nav class="dropdown-menu" [class.active]="isMenuOpen">
+      <a routerLink="/introduce" class="menu-link">Trang chủ</a>
+      <a routerLink="/card" class="menu-link">Tìm thú cưng</a>
+      <a routerLink="/register" class="menu-link">Đăng ký thông tin</a>
+    </nav>
+  </div>
+</header>

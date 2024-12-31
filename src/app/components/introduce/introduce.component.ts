@@ -36,19 +36,27 @@ export class IntroduceComponent {
       content :"một gia đình tốt bụng vừa nhận nuôi 2 bé mèo khuyết tật ",
       image : "https://res.cloudinary.com/petrescue/image/upload/c_fill,f_auto,g_face,h_500,q_80,w_500/yfj7e4p5cwnsldya8rkg.jpg"
     },
-    {title : "cứu hộ tại đám cháy",
-      content :"một đám cháy lớn tại adshfahsf khiến 200 ngừoi bị thương , thiệt hại hơn ...",
-      image : "https://image.baophapluat.vn/w840/Uploaded/2024/ibpchuf/2024_12_01/khoi-33-1733047635304839461236-2368.jpg"
+    {
+      title: 'Cứu hộ tại đám cháy',
+      content:
+        'Một đám cháy lớn tại thành phố Long Khánh khiến 200 ngừoi bị thương , thiệt hại hơn ...',
+      image:
+        'https://image.baophapluat.vn/w840/Uploaded/2024/ibpchuf/2024_12_01/khoi-33-1733047635304839461236-2368.jpg',
     },
-    {title : "Why can’t I find the rescue organisation I’m looking for?",
-      content :"Wondering why you can’t find the rescue organisation y",
-      image : "https://res.cloudinary.com/petrescue/image/upload/c_fill,f_auto,g_face,h_500,q_80,w_500/yfj7e4p5cwnsldya8rkg.jpg"
+    {
+      title: 'Cứu hộ tại đám cháy',
+      content: 'Một đám cháy lớn tại thành phố Long Khánh khiến 200 ngừoi bị thương , thiệt hại hơn ...',
+      image:
+        'https://image.baophapluat.vn/w840/Uploaded/2024/ibpchuf/2024_12_01/khoi-33-1733047635304839461236-2368.jpg',
     },
-    {title : "Why can’t I find the rescue organisation I’m looking for?",
-      content :"Wondering why you can’t find the rescue organisation you're looking for on PetRescue? ",
-      image : "https://res.cloudinary.com/petrescue/image/upload/c_fill,f_auto,g_face,h_500,q_80,w_500/yfj7e4p5cwnsldya8rkg.jpg"
-    }
-  ]
+    {
+      title: ' Nhận nuôi mèo bỏ rơi',
+      content:
+        "Một gia đình tốt bụng vừa nhận nuôi 2 bé mèo khuyết tật ",
+      image:
+        'https://res.cloudinary.com/petrescue/image/upload/c_fill,f_auto,g_face,h_500,q_80,w_500/yfj7e4p5cwnsldya8rkg.jpg',
+    },
+  ];
 
    currentImageIndex: number = 0;
 

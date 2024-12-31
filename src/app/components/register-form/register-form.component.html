@@ -1,43 +1,44 @@
+<div class="register-container">
+  <div class="basic-info">
+    <div>Thông Tin Liên Lạc</div>
+    <mat-stepper  linear #stepper>
+      <mat-step [stepControl]="firstFormGroup" [editable]="isEditable">
+        <form [formGroup]="firstFormGroup">
+          <ng-template matStepLabel>Tên của bạn</ng-template>
+          <mat-form-field>
+            <mat-label>Tên</mat-label>
+            <input
+              matInput
+              formControlName="firstCtrl"
+              placeholder="Nguyễn Văn A"
+              required
+            />
 
-<div class="register-container"> 
-  
-
-  <div class="basic-info"> 
-
-    <div> 
-      Thông Tin Liên Lạc
-    </div>
-  <mat-stepper linear #stepper>
-
-    <mat-step [stepControl]="firstFormGroup" [editable]="isEditable">
-      <form [formGroup]="firstFormGroup">
-        <ng-template matStepLabel>Tên của bạn</ng-template>
-        <mat-form-field>
-          <mat-label>Tên</mat-label>
-          <input matInput formControlName="firstCtrl" placeholder="Nguyễn Văn A" required>
-        </mat-form-field>
-        <div>
-          <button mat-button matStepperNext>Next</button>
-        </div>
-      </form>
-    </mat-step>
-    <mat-step [stepControl]="secondFormGroup" [editable]="isEditable">
-      <form [formGroup]="secondFormGroup">
-        <ng-template matStepLabel>Địa chỉ của bạn</ng-template>
-        <mat-form-field>
-          <mat-label>Address</mat-label>
-          <input matInput formControlName="secondCtrl" placeholder="Hẻm 98, đường Bình Dương, tỉnh Bình Thường"
-                 required>
-        </mat-form-field>
-        <div>
-          <button mat-button matStepperPrevious>Back</button>
-          <button mat-button matStepperNext>Next</button>
-        </div>
-      </form>
-    </mat-step>
-    <div>
-      
-    </div>
+          </mat-form-field>
+          <div>
+            <button mat-button matStepperNext>Next</button>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step [stepControl]="secondFormGroup" [editable]="isEditable">
+        <form [formGroup]="secondFormGroup">
+          <ng-template matStepLabel>Địa chỉ của bạn</ng-template>
+          <mat-form-field>
+            <mat-label>Address</mat-label>
+            <input
+              matInput
+              formControlName="secondCtrl"
+              placeholder="Hẻm 98, đường Bình Dương, tỉnh Bình Thường"
+              required
+            />
+          </mat-form-field>
+          <div>
+            <button mat-button matStepperPrevious>Back</button>
+            <button mat-button matStepperNext>Next</button>
+          </div>
+        </form>
+      </mat-step>
+      <div></div>
 
     <mat-step [stepControl]="ThirdFormGroup" [editable]="isEditable">
       <form [formGroup]="ThirdFormGroup">
@@ -55,21 +56,25 @@
     </mat-step>
 
 
-    <mat-step [stepControl]="FourthFormGroup" [editable]="isEditable">
-      <form [formGroup]="FourthFormGroup">
-        <ng-template matStepLabel>Email của bạn</ng-template>
-        <mat-form-field>
-          <mat-label>Email</mat-label>
-          <input matInput formControlName="fourthCtrl" placeholder="email@gmail.com"
-                 required>
-        </mat-form-field>
-        <div>
-          <button mat-button matStepperPrevious>Quay lại</button>
-          <button mat-button matStepperNext>Tiếp</button>
-        </div>
-      </form>
-    </mat-step>
+      <mat-step [stepControl]="FourthFormGroup" [editable]="isEditable">
+        <form [formGroup]="FourthFormGroup">
+          <ng-template matStepLabel>Email của bạn</ng-template>
+          <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input
+              matInput
+              formControlName="fourthCtrl"
+              placeholder="email@gmail.com"
+              required
 
+            />
+          </mat-form-field>
+          <div>
+            <button mat-button matStepperPrevious>Quay lại</button>
+            <button mat-button matStepperNext>Tiếp</button>
+          </div>
+        </form>
+      </mat-step>
 
     <mat-step>
       <ng-template matStepLabel>Xong</ng-template>
@@ -141,29 +146,20 @@ label="lý do khác"
     </div>
   </mat-step>
 
-  <mat-step >
-    <ng-template matStepLabel>Hoàn tất</ng-template>
-    <p>hoàn tất.</p>
-    <div>
-      <button mat-button matStepperPrevious>Quay lại</button>
-      <button mat-button (click)="stepper.reset()">Đièn lại từ đầu</button>
-    </div>
-  </mat-step>
-</mat-stepper>
+      <mat-step>
+        <ng-template matStepLabel>Hoàn tất</ng-template>
+        <p>Hoàn tất.</p>
+        <div>
+          <button mat-button matStepperPrevious>Quay lại</button>
+          <button mat-button (click)="stepper.reset()">Đièn lại từ đầu</button>
+        </div>
+      </mat-step>
+    </mat-stepper>
+  </div>
+  
 
-
-
-
-
+  <button (click)="submit()" class="button-submit" mat-fab extended [disabled]="false">
+    Xác nhận
+    <mat-icon svgIcon="thumbs-up">✅️</mat-icon>
+  </button>
 </div>
-
-<button class="button-submit" mat-fab extended [disabled]="false">
-  Xác nhận
-  <mat-icon svgIcon="thumbs-up" >✅️</mat-icon>
-</button>
- </div>
-
- 
- 
- 
- 

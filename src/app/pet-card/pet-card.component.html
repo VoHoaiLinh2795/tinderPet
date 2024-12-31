@@ -68,24 +68,25 @@
 
 </div>
 
-
-
-
-
-<div class="card-container" [ngStyle]="{ 'overflow-y': shouldScroll ? 'scroll' : 'visible' }"> 
-  <mat-tab-group class="mat-tab-gr" [selectedIndex]="indexTab">
-    <mat-tab *ngFor="let tab of list[currentPetidx].imageUrl">
-      <img  [src]="tab"/>
-    </mat-tab>
-  </mat-tab-group>
-  <div class="arrow">
-
-    <img (click)="back()" src="https://firebasestorage.googleapis.com/v0/b/blogpj-t1.appspot.com/o/image%2Fleft-arrow.png?alt=media&token=d7761f10-9bf2-44fa-b1e3-0b27a15a8e0f"  />
-    <img (click)="next()"  src="https://firebasestorage.googleapis.com/v0/b/blogpj-t1.appspot.com/o/image%2Fright.png?alt=media&token=2902c1ac-6439-458e-bacc-935edc1ef059"/>
-
-  </div>
-
-  
+  <div
+    class="card-container"
+    [ngStyle]="{ 'overflow-y': shouldScroll ? 'scroll' : 'visible' }"
+  >
+    <mat-tab-group class="mat-tab-gr" [selectedIndex]="indexTab">
+      <mat-tab *ngFor="let tab of list[currentPetidx].imageUrl">
+        <img [src]="tab" />
+      </mat-tab>
+    </mat-tab-group>
+    <div class="arrow">
+      <img
+        (click)="back()"
+        src="https://firebasestorage.googleapis.com/v0/b/blogpj-t1.appspot.com/o/image%2Ficons8-back-50.png?alt=media&token=b4f2cfa5-defd-42b1-ac23-a6ee3595f400"
+      />
+      <img
+        (click)="next()"
+        src="https://firebasestorage.googleapis.com/v0/b/blogpj-t1.appspot.com/o/image%2Ficons8-next-page-50.png?alt=media&token=4a9bd83d-01a8-4579-9973-8d59660ca927"
+      />
+    </div>
 
   <div class="info-container-wrap">
 

@@ -1,6 +1,6 @@
 import { Component, inject, Input, ViewChild } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-register-form',
   templateUrl: './register-form.component.html',
@@ -9,7 +9,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 export class RegisterFormComponent {
 
 
-  constructor(){
+  constructor(private router : Router){
 
   }
 
@@ -38,7 +38,29 @@ export class RegisterFormComponent {
     return obj.value;
   }
 
+  isFormCompleted(): boolean {
+    return (
+      this.firstFormGroup.valid &&
+      this.secondFormGroup.valid &&
+      this.ThirdFormGroup.valid
+    );
+  }
+
   isLinear : any
+  
+
+    complete1 : boolean = false;
+  complete2 : boolean = false;
+
+  submit(){
+    
+    if(this.homeOwnership!=null && this.isFormCompleted())
+    this.router.navigate(['/card']);
+
+    else {
+      window.alert('bạn chưa điền đủ thông tin cần thiết');
+    }
+  }
 
   
 }
