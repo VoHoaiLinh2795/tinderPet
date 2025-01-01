@@ -199,6 +199,16 @@ export class PetCardComponent {
     this._snackBar.open("thêm thú cưng thành công", "đóng");
   }
 
+  alertSuccess1(){
+    this._snackBar.dismiss();
+    this._snackBar.open("hoàn tác thú cưng thành công", "đóng");
+  }
+
+  alertSuccess2(){
+    this._snackBar.dismiss();
+    this._snackBar.open("đã bỏ qua thú cưng này", "đóng");
+  }
+
   next (){
     if(this.indexTab <= this.list.length-2)
     this.indexTab = this.indexTab+1;
@@ -249,6 +259,7 @@ export class PetCardComponent {
       this.currentPetidx = 0;
     }
     this.indexTab =0;
+    this.alertSuccess2();
      
   }
 
@@ -259,6 +270,7 @@ export class PetCardComponent {
     }  else {
       this.currentPetidx = 0;
     }
+    this.alertSuccess1();
   }
 
   switchScroll (){

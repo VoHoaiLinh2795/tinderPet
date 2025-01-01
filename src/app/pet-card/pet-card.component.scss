@@ -26,7 +26,9 @@
 
 display: flex;
 flex-direction: row;
+
 background-color:  #f6bc66;
+
 
 .icon-list {
   display: flex;
@@ -43,9 +45,9 @@ background-color:  #f6bc66;
   position: relative;
   flex-direction: row; /* Các mục xếp dọc */
   gap: 15px; /* Khoảng cách giữa các mục */
-  top : 430px;
-  right : 1440px;
+  left : 40px;
   margin: 20px;
+ 
 }
 
 
@@ -59,16 +61,17 @@ background-color:  #f6bc66;
   flex-direction: column;
  
   width: 600px;
-  height: 947px;
+  height: 920px;
   
 
 
   .header-personal-board {
     display: flex;
+   
     flex-direction: row;
     align-items: center;
     position: relative;
-    background-color: #f4f666;
+    background-color: #fdfd96;
     width: 600px;
     height: 100px;
 
@@ -82,6 +85,8 @@ background-color:  #f6bc66;
   .main-personal-board {
     
     position: relative;
+   
+    height: 710px;
     z-index: 20;
     background-color: 	#f6bc66; // Light background color for the tab content
   padding: 16px;
@@ -187,7 +192,7 @@ background-color:  #f6bc66;
   position: relative;
   left: 300px;
   width: 650px;
-  height: 947px;
+  height: 920px;
 
   .arrow {
     
@@ -266,7 +271,7 @@ background-color:  #f6bc66;
 
     z-index: 5;
     position: relative;
-    top: -400px;
+    margin-top: -400px;
     width: 100%;
     height: 350px;
     
@@ -316,8 +321,7 @@ background-color:  #f6bc66;
 
       ::ng-deep mat-chip {
           width: auto;
-          background: #F5C942;
-          
+          background: #66A0F6;
           padding: 10px;
        
           text-align: center;
@@ -375,7 +379,7 @@ background-color:  #f6bc66;
     animation: slideDown 0.5s ease-out;
     position: relative;
     z-index: 8;
-    top : -400px;
+
    
   padding: 20px;
     width: 628px;

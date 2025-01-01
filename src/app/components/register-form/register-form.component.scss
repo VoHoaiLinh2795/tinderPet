@@ -1,14 +1,15 @@
 .register-container {
-    position: fixed;
+   
 
-  
+    position : relative;
+    padding : 50px 50px;
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
     background-color: #f6b048;
-    left: 550px;
-    top: 100px;
+    left: 490px;
+   
     width: 900px;
     height: 800px;
    
