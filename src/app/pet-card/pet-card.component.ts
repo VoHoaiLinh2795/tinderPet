@@ -196,17 +196,17 @@ export class PetCardComponent {
 
   alertSuccess(){
     this._snackBar.dismiss();
-    this._snackBar.open("thêm thú cưng thành công", "đóng");
+    this._snackBar.open("Thêm thú cưng thành công", "đóng");
   }
 
   alertSuccess1(){
     this._snackBar.dismiss();
-    this._snackBar.open("hoàn tác thú cưng thành công", "đóng");
+    this._snackBar.open("Hoàn tác thú cưng thành công", "đóng");
   }
 
   alertSuccess2(){
     this._snackBar.dismiss();
-    this._snackBar.open("đã bỏ qua thú cưng này", "đóng");
+    this._snackBar.open("Đã bỏ qua thú cưng này", "đóng");
   }
 
   next (){
@@ -222,7 +222,7 @@ export class PetCardComponent {
   chooseThisPet(){
 
     if(this.messageList.at(this.currentPetidx) != null){
-      window.alert("bạn đã chọn cún này rồi")
+      window.alert("Bạn đã chọn cún này rồi")
     }else {
 
       this.messageList.push(this.currentPetidx);

@@ -27,14 +27,14 @@
   </div>
 
   <div class="form__group field">
-    <input type="text" class="form__field" placeholder="password" name="password" id='password' required />
+    <input type="password" class="form__field" placeholder="password" name="password" id='password' required />
     <label for="password" class="form__label">Password</label>
   </div>
 </form>
 
 <div class="button-container">
   <button id="button-cancel" (click)="cancel()">Hủy</button>
-  <button id="button-submit" class="btn btn-primary" onclick="window.location.href='/register'">Đăng nhập</button>
+  <button id="button-submit" type = "submit" class="btn btn-primary" onclick="window.location.href='/register'">Đăng nhập</button>
 
 
 

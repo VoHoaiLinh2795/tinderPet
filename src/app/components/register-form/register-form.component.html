@@ -78,7 +78,7 @@
 
     <mat-step>
       <ng-template matStepLabel>Xong</ng-template>
-      <p>Bạn đã điền form hoàn tất</p>
+      <p>Bạn đã điền thông tin hoàn tất</p>
       <div>
         <button mat-button matStepperPrevious>Quay lại</button>
         <button mat-button (click)="stepper.reset()">Điền lại từ đầu</button>
@@ -103,14 +103,14 @@
  
  />
  <p-checkbox 
- label="làm bạn đồng hành với trẻ con" 
+ label="Làm bạn đồng hành với trẻ con" 
  
 />
 
 <p-checkbox 
 label="Canh nhà" />
 <p-checkbox 
-label="lý do khác" 
+label="Lý do khác" 
 
 />
 
@@ -123,9 +123,9 @@ label="lý do khác"
   <mat-step  >
     <ng-template matStepLabel>Bạn sống ở</ng-template>
     <mat-radio-group [(ngModel)]="selectedOption" aria-label="Select an option">
-      <mat-radio-button value="1">căn hộ</mat-radio-button>
-      <mat-radio-button value="2">nhà riêng</mat-radio-button>
-      <mat-radio-button value="2">khác</mat-radio-button>
+      <mat-radio-button value="1">Căn hộ</mat-radio-button>
+      <mat-radio-button value="2">Nhà riêng</mat-radio-button>
+      <mat-radio-button value="2">Khác</mat-radio-button>
     </mat-radio-group>
       <div>
         <button mat-button matStepperPrevious>Quay lại</button>
@@ -135,10 +135,10 @@ label="lý do khác"
   </mat-step>
 
   <mat-step >
-    <ng-template matStepLabel>nơi bạn sống thuộc quyền sở hữu của bạn ?</ng-template>
+    <ng-template matStepLabel>Nơi bạn sống thuộc quyền sở hữu của bạn ?</ng-template>
     <mat-radio-group [(ngModel)]="homeOwnership" aria-label="Select an option">
-      <mat-radio-button value="1">đúng</mat-radio-button>
-      <mat-radio-button value="2">không</mat-radio-button>
+      <mat-radio-button value="1">Đúng</mat-radio-button>
+      <mat-radio-button value="2">Không</mat-radio-button>
     </mat-radio-group>
     <div>
       <button mat-button matStepperPrevious>Quay lại</button>
@@ -151,7 +151,7 @@ label="lý do khác"
         <p>Hoàn tất.</p>
         <div>
           <button mat-button matStepperPrevious>Quay lại</button>
-          <button mat-button (click)="stepper.reset()">Đièn lại từ đầu</button>
+          <button mat-button (click)="stepper.reset()">Điền lại từ đầu</button>
         </div>
       </mat-step>
     </mat-stepper>

@@ -18,7 +18,7 @@
 
   <div class="main-personal-board">
     <mat-tab-group>
-      <mat-tab label="Giỏ hàng thú cưng">
+      <mat-tab label="Thú cưng yêu thích">
         <div *ngFor="let petIdx of messageList">
           <div class="petBar">
             <img class="imgAvt" [src]="list[petIdx].imageUrl[0]"/>
@@ -54,10 +54,10 @@
         <p *ngIf="pet.status == 0">Chúng tôi sẽ kiểm tra thông tin cá nhân của bạn,
           yêu cầu của bạn sẽ được xem xét trong thời gian sớm nhất
         </p>
-        <p *ngIf="pet.status == 2">xin lỗi đã từ chối yêu cầu này,
+        <p *ngIf="pet.status == 2">Xin lỗi đã từ chối yêu cầu này,
           vì lý do : môi trường sống của thú cưng này không phù hợp trong môi trường sống của bạn.
         </p>
-        <p *ngIf="pet.status == 1">yêu cầu của bạn đã được phê duyệt, vui lòng giữ máy để chúng tôi có thể liên hệ trong thời gian sớm nhất</p>
+        <p *ngIf="pet.status == 1">Yêu cầu của bạn đã được phê duyệt, vui lòng giữ máy để chúng tôi có thể liên hệ trong thời gian sớm nhất</p>
         </mat-expansion-panel>
         </div>
       </mat-tab>
@@ -71,7 +71,7 @@
     <div class="icon-item">
       <img class="specific-icon" 
            src="https://firebasestorage.googleapis.com/v0/b/blogpj-t1.appspot.com/o/image%2Fclose.png?alt=media&token=f385338e-0c74-413e-8231-06f6ac331be9" />
-      <span class="icon-text">xóa khỏi danh sách</span>
+      <span class="icon-text">Xóa khỏi danh sách</span>
     </div>
   
     <!-- Choose This Pet -->

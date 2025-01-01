@@ -54,11 +54,11 @@ export class RegisterFormComponent {
 
   submit(){
     
-    if(this.homeOwnership!=null && this.isFormCompleted())
+    if(this.homeOwnership!=null && this.isFormCompleted()){
     this.router.navigate(['/card']);
 
-    else {
-      window.alert('bạn chưa điền đủ thông tin cần thiết');
+    }else {
+      window.alert('Bạn chưa điền đủ thông tin cần thiết!');
     }
   }
 
